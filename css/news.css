@@ -1,0 +1,17 @@
+#news_title {
+	background: url(../image/news/title.png);
+	width: 1040px;
+	height: 50px;
+	margin: 0 auto;
+	clear: both;
+}
+#news_box {
+	background: url(../image/news/box.png);
+	width: 1040px;
+	height: 206px;
+	margin: 0 auto;
+	clear: both;
+}
+#news_box_inside {
+	padding: 10px;
+}

@@ -1,0 +1,337 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+caption, ul, ol, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+	background-color: #ffa579;
+	background-repeat: repeat;
+}
+#site_container {
+	width: 1060px;
+	margin:0 auto;
+}
+#site_top {
+	width: 100%;
+	height: 88px;
+	clear: both;
+}
+#site_title {
+	background: url(../image/header/title.png);
+	width: 550px;
+	height: 88px;
+	float: left;
+}
+#site_right {
+	width: 343px;
+	height: 88px;
+	float: right;
+}
+#site_right_fill {
+	width: 100%;
+	height: 55px;
+	clear: both;
+}
+#sm_instagram {
+	background: url(../image/header/sm_instagram.png);
+	width: 115px;
+	height: 30px;
+	float: right;
+}
+#sm_instagram:hover {
+	background-position: -115px;
+}
+#sm_youtube {
+	background: url(../image/header/sm_youtube.png);
+	width: 98px;
+	height: 30px;
+	float: right;
+}
+.sm_spacer {
+	width: 10px;
+	height: 100%;
+	float: right;
+}
+#sm_youtube:hover {
+	background-position: -98px;
+}
+#sm_facebook {
+	background: url(../image/header/sm_facebook.png);
+	width: 107px;
+	height: 30px;
+	float: right;
+}
+#sm_facebook:hover {
+	background-position: -107px;
+}
+#sm_twitter {
+	background: url(../image/header/sm_twitter.png);
+	width: 95px;
+	height: 30px;
+	float: right;
+}
+#sm_twitter:hover {
+	background-position: -95px;
+}
+
+#navbar_home:hover {
+	background-position: -38px;
+}
+#navbar_container {
+	width: 100%;
+	height: 50px;
+}
+#navbar_body {
+	background: url(../image/header/navbar_body.png);
+	background-repeat: repeat-x;
+	width: 100%;
+	height: 50px;
+	float: left;
+}
+#navbar_top {
+	width: 100%;
+	height: 17px;
+	clear: both;
+}
+#navbar_middle {
+	width: 100%;
+	height: 17px;
+	clear: both;
+}
+#navbar_bottom {
+	width: 100%;
+	height: 16px;
+	clear: both;
+}
+#navbar_spacer_1 {
+	width: 28px;
+	height: 100%;
+	float: left;
+}
+.navbar_spacer_2 {
+	width: 42px;
+	height: 100%;
+	float: left;
+}
+#navbar_campaign {
+	background: url(../image/header/navbar_campaign.png);
+	width: 68px;
+	height: 17px;
+	float: left;
+}
+#navbar_campaign:hover {
+	background-position: -68px;
+}
+#navbar_cast {
+	background: url(../image/header/navbar_cast.png);
+	width: 34px;
+	height: 17px;
+	float: left;
+}
+#navbar_cast:hover {
+	background-position: -34px;
+}
+#navbar_crew {
+	background: url(../image/header/navbar_crew.png);
+	width: 38px;
+	height: 17px;
+	float: left;
+}
+#navbar_crew:hover {
+	background-position: -38px;
+}
+
+
+
+#navbar_home {
+	background: url(../image/header/navbar_home.png);
+	width: 38px;
+	height: 17px;
+	float: left;
+}
+#navbar_home:hover {
+	background-position: -38px;
+}
+#navbar_news {
+	background: url(../image/header/navbar_news.png);
+	width: 38px;
+	height: 17px;
+	float: left;
+}
+#navbar_news:hover {
+	background-position: -38px;
+}
+#navbar_apply {
+	background: url(../image/header/navbar_apply.png);
+	width: 41px;
+	height: 17px;
+	float: left;
+}
+#navbar_apply:hover {
+	background-position: -41px;
+}
+#navbar_recruitment {
+	background: url(../image/header/navbar_recruitment.png);
+	width: 93px;
+	height: 17px;
+	float: left;
+}
+#navbar_recruitment:hover {
+	background-position: -93px;
+}
+#navbar_roster {
+	background: url(../image/header/navbar_roster.png);
+	width: 51px;
+	height: 17px;
+	float: left;
+}
+#navbar_roster:hover {
+	background-position: -51px;
+}
+#navbar_logs {
+	background: url(../image/header/navbar_logs.png);
+	width: 33px;
+	height: 17px;
+	float: left;
+}
+#navbar_logs:hover {
+	background-position: -33px;
+}
+#navbar_wowprogress {
+	background: url(../image/header/navbar_wowprogress.png);
+	width: 105px;
+	height: 17px;
+	float: left;
+}
+#navbar_wowprogress:hover {
+	background-position: -105px;
+}
+#navbar_forum {
+	background: url(../image/header/navbar_forum.png);
+	width: 45px;
+	height: 17px;
+	float: left;
+}
+#navbar_forum:hover {
+	background-position: -45px;
+}
+
+#navbar_media {
+	background: url(../image/header/navbar_media.png);
+	width: 41px;
+	height: 16px;
+	float: left;
+}
+#navbar_media:hover {
+	background-position: -41px;
+}
+.divider {
+	background: url(../image/body/divider.png);
+	width: 100%;
+	height: 3px;
+}
+#body_box {
+	width: 100%;
+	background-color: rgba(255,0,0,0.2);
+	color: #FFFFFF;
+	overflow: auto;
+}
+#body_inside {
+	padding:10px;
+	overflow: auto;
+}
+#guildpic {
+	background: url(../image/body/guildpic.png);
+	width: 1060px;
+	height: 319px;
+	clear: both;
+}
+.box_space {
+	width: 19px;
+	height: 100%;
+	float: left;
+}
+.box_container {
+	width: 334px;
+	min-height: 258px;
+	float: left;
+}
+.box_container_2 {
+	width: 687px;
+	min-height: 258px;
+	float: right;
+}
+.box_1 {
+	background: url(../image/body/guild_box.png);
+	background-size: 100% 100%;
+	width: 100%;
+	clear: both;
+	text-align: center;
+	overflow: hidden;
+}
+.box_2_edge {
+	background: url(../image/body/box_2_edge.png);
+	background-size: 100% 100%;
+	width: 100%;
+	height: 1px;
+	clear: both;
+}
+.box_2 {
+	background: url(../image/body/box_2.png);
+	background-color: black;
+	background-repeat: repeat-y;
+	width: 100%;
+	height: 100%;
+	min-height: 20px;
+	clear: both;
+}
+.box_spacer {
+	width: 100%;
+	height: 2px;
+	clear: both;
+}
+.box_bar {
+	background: url(../image/body/guild_bar.png);
+	background-size: 100% 100%;
+	width: 100%;
+	height: 50px;
+	clear: both;
+	font-family: 'Bebas Neue Bold';
+	font-size: 48px;
+}
+.box_bar p {
+	padding-left: 8px;
+}
+.box_2_bar {
+	background: url(../image/body/box_2_bar.png);
+	background-size: 100% 100%;
+	width: 100%;
+	height: 50px;
+	clear: both;
+	font-family: 'Bebas Neue Bold';
+	font-size: 48px;
+}
+.box_2_bar p {
+	padding-left: 8px;
+}
+@font-face {
+   font-family: 'Bebas Neue Bold';
+   src: url('../fonts/BebasNeue Bold.otf');
+} 
+@font-face {
+   font-family: 'Candara Regular';
+   src: url('../fonts/Candara.ttf');
+}
+.bar_edge {
+	background: url(../image/body/bar_edge.png);
+	width: 1px;
+	height: 50px;
+	float: left;
+}
+.bar {
+	background: url(../image/body/bar.png);
+	height: 50px;
+	float: left;
+}

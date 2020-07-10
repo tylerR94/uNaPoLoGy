@@ -1,0 +1,154 @@
+.campaign_container {
+	width: 334px;
+	min-height: 206px;
+	float: left;
+}
+.campaign_container_2 {
+	width: 687px;
+	min-height: 206px;
+	float: left;
+}
+.campaign_bar {
+	background: url(../image/campaign/bar.png);
+	background-size: 100% 100%;
+	width: 100%;
+	height: 50px;
+	clear: both;
+	font-family: 'Bebas Neue Bold';
+	font-size: 48px;
+}
+.campaign_bar_2 {
+	background: url(../image/campaign/bar_2.png);
+	background-size: 100% 100%;
+	width: 100%;
+	height: 50px;
+	clear: both;
+	font-family: 'Bebas Neue Bold';
+	font-size: 48px;
+}
+.campaign_bar p {
+	padding-left: 8px;
+}
+.campaign_bar_2 p {
+	padding-left: 8px;
+}
+.campaign_spacer {
+	width: 100%;
+	height: 2px;
+	clear: both;
+}
+.campaign_box_edge {
+	background: url(../image/campaign/box_edge.png);
+	background-size: 100% 100%;
+	width: 100%;
+	height: 1px;
+	clear: both;
+	text-align: center;
+	overflow: hidden;
+}
+.campaign_box_2_edge {
+	background: url(../image/campaign/box_2_edge.png);
+	background-size: 100% 100%;
+	width: 100%;
+	height: 1px;
+	clear: both;
+	text-align: center;
+	overflow: hidden;
+}
+.campaign_box {
+	background: url(../image/campaign/box.png);
+	background-size: 100% 100%;
+	width: 100%;
+	clear: both;
+	text-align: left;
+	overflow: hidden;
+}
+.campaign_box_2 {
+	background: url(../image/campaign/box_2.png);
+	background-size: 100% 100%;
+	width: 100%;
+	clear: both;
+	text-align: left;
+	overflow: hidden;
+}
+.campaign_box_inside {
+	text-align: left;
+	padding: 10px;
+}
+.progressbar {
+	background-color: #F1F1F1;
+	position: relative;
+	padding: 3px;
+}
+.progressbar_left {
+	position: absolute;
+	left: 2%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.progressbar_right {
+	position: absolute;
+	right: 2%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.progressbar_div {
+	background-color: green;
+	height: 35px;
+	color: #000000;
+	vertical-align: middle;
+	line-height: 35px;
+	font-family: Verdana,sans-serif;
+	font-size:28px;
+}
+.donate_button {
+	border: none;
+	background-color: #f44336;
+	outline: 0;
+	vertical-align: middle;
+	text-align: center;
+	-webkit-appearance: button;
+	color: #FFFFFF;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 15px;
+	padding-right: 15px;
+	cursor: pointer;
+	cursor: hand;
+}
+.donate_field {
+	width: 125px;
+	height: 29px;
+}
+.campaign_tabs_container {
+	width: 100%;
+}
+ul.tabs{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+ul.tabs li{
+	background: #000000;
+	color: #FFFFFF;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+ul.tabs li.current{
+	background: #151515;
+	color: #FFFFFF;
+	border: 1px black solid;
+}
+
+.tab-content{
+	display: none;
+	background: #f1f1f1;
+	color: #000000;
+	padding: 15px;
+}
+
+.tab-content.current{
+	display: inherit;
+}

@@ -1,0 +1,48 @@
+.cast_container {
+	width: 1040px;
+	min-height: 206px;
+	float: left;
+}
+.cast_bar {
+	background: url(../image/cast/bar.png);
+	background-size: 100% 100%;
+	width: 100%;
+	height: 50px;
+	clear: both;
+	font-family: 'Bebas Neue Bold';
+	font-size: 48px;
+}
+.cast_bar p {
+	padding-left: 8px;
+}
+.cast_spacer {
+	width: 100%;
+	height: 2px;
+	clear: both;
+}
+.cast_box_edge {
+	background: url(../image/cast/box_edge.png);
+	background-size: 100% 100%;
+	width: 100%;
+	height: 1px;
+	clear: both;
+	text-align: center;
+	overflow: hidden;
+}
+.cast_box {
+	background: url(../image/cast/box.png);
+	background-size: 100% 100%;
+	width: 100%;
+	clear: both;
+	text-align: left;
+	overflow: hidden;
+}
+.cast_box_inside {
+	padding: 10px;
+}
+.cast_info {
+	font-family: 'Candara Regular';
+}
+.cast_info a {
+	color: #FFF;
+}
