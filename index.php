@@ -4,14 +4,22 @@ require "config.php";
 $url = 'http://'.$_SERVER['SERVER_NAME'].dirname($_SERVER["REQUEST_URI"]);
 ?>
 <!DOCTYPE HTML>
-<html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta charset="UTF-8" />
+<meta charset='UTF-8'>
+<meta name="description" content="Thanks for stopping by the uNaPoLoGy series! We are raising money to shoot the pilot episode of this new series. We need any and all help we can get! Every dollar makes a difference, so please consider donating some if you are able to. If you can't, no problem! Feel free to help our cause by spreading the word.">
+<meta name="author" content="Tyler Richards">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>uNaPoLoGy (the series)</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <link rel="stylesheet" type="text/css" href="css/campaign.css" />
 <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Outdated, security vulnerabilities <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+<script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
 <script type="text/javascript">
 function showDiv() {
    document.getElementById('donation_field').style.display = "block";
@@ -56,7 +64,7 @@ $(document).ready(function(){
 
 		<!--BODY STARTS HERE-->
 		<div class="divider"></div>
-		<div style="background-color: rgba(0,0,0,1);"><iframe width="1060" height="515" src="https://www.youtube.com/embed/hLNQkXL6hok?autoplay=1" frameborder="0" allowfullscreen></iframe></div>
+		<div style="background-color: rgba(0,0,0,1);"><iframe width="1060" height="515" src="https://www.youtube.com/embed/hLNQkXL6hok?autoplay=1" frameborder="0" allowfullscreen title="Youtube Trailer"></iframe></div>
 		<div class="divider"></div>
 		<div id="body_box"><div id="body_inside">
 			<div class="campaign_container">
@@ -211,7 +219,7 @@ $(document).ready(function(){
 
 					            <tr>
 					                <td><label for="showamount">Show Donation Amount:</label></td>
-					                <td>Yes<input type="radio" id="showamount" name="showamount" value="Yes" checked="checked" /> No<input type="radio" id="showamount" name="showamount" value="No" /></td>
+					                <td>Yes<input type="radio" id="showamountYes" name="showamount" value="Yes" checked="checked" /> No<input type="radio" id="showamountNo" name="showamount" value="No" /></td>
 								</tr>
 					            
 								<tr>
@@ -243,19 +251,20 @@ The equipment such as the camera, lights, sound, and a crew of 13 people will be
 
 							<div id="tab-1" class="tab-content current">
 								<?php
-								$donations = mysqli_query("SELECT * FROM dc_comments ORDER BY id DESC");
-								$rowcount = mysqli_num_rows($donations);
-								$content = mysqli_fetch_all($donations,MYSQLI_ASSOC);
-								for($i=0;$i<$rowcount;$i++){
-									echo '<div style="float:left;"><u>'.$content['name'].'</u></div><div style="float:right;">';
-									if(is_null($content['amount'])){ echo '<u>Amount: <i>Hidden</i></u></div>'; }else{
-										echo '<u>Amount: $'.$content['amount'].'</u></div>';
+									$donations = mysqli_query("SELECT * FROM dc_comments ORDER BY id DESC");
+									$rowcount = mysqli_num_rows($donations);
+									$content = mysqli_fetch_all($donations,MYSQLI_ASSOC);
+									for($i=0;$i<$rowcount;$i++){
+										echo '<div style="float:left;"><u>'.$content['name'].'</u></div><div style="float:right;">';
+										if(is_null($content['amount'])){ echo '<u>Amount: <i>Hidden</i></u></div>'; }else{
+											echo '<u>Amount: $'.$content['amount'].'</u></div>';
+										}
+										echo '<div style="clear:both;"></div>';
+										if (strlen($content['message']) > 0){
+											echo '<br /><div>'.$content['message'].'</div>';
+										}
+										echo '<hr />';
 									}
-									echo '<div style="clear:both;"></div>';
-									if (strlen($content['message']) > 0){
-										echo '<br /><div>'.$content['message'].'</div>';
-									}
-									echo '<hr />';
 								?>
 							</div>
 							<div id="tab-2" class="tab-content">
